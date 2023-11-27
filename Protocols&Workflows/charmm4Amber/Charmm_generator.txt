@@ -1,0 +1,22 @@
+This is summarized protocol on how to generate input for amber from https://charmm-gui.org/. For this case we are using peptide6.pdb, as we need to generate input files to run Charmm36m in the amber package.
+
+1) Create an account in CHARMM-GUI website
+2) Select and "clean" (remove hydrogens, ions, and water from the pdb file) the pdb file.
+3) Go to the CHARMM-GUI and select "Input Generator/Solution Builder"
+4) Click on "Protein Solution System" and upload PDB file
+5) Click on "Next" twice
+6) When at "PDB Manipulation Options", 
+6.1- Adjust to target pH
+6.2- Select cap if needed
+6.3- Choose any other options in the page, and click "Next"
+7) In "Waterbox Size Options", 
+7.1- click on "Fit waterbox size to protein Size" and choose waterbox type (I chose octahedral), and type 10.0 (or 12.0) next to the X
+7.2- In the "Add Ions" options, change to NaCl, if wanted
+7.3- Click on "Calculate solvent composition", and click "Next" (this step might take some time). Click "next" again without modifying the periodic boundary conditions
+8) Next step is to select the FF.
+8.1- Select CHARMM36m, then click on "Hydrogen mass repartition"
+8.2- Since we'd like to use Amber package, then select "AMBER" as "Input Generator Options"
+8.3- For the "Dynamics Input Generation Options", I change the temperature to 298.15 K. Click "Next"
+This last step will lead you to all of your inputs for each stage. download them to your local directory.
+
+Within this directory, there is another directory named "Amber" that contains all the input files to be used in the Amber package. Along with this tutorial, there are other scripts to be used for amber MD simulations using charmm-gui_generated inputs.
