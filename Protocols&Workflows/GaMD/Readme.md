@@ -1,0 +1,1 @@
+Here, we are including input files and examples to run Peptide Gaussian Accelerated Molecular Dynamics in explicit solvent in amber
