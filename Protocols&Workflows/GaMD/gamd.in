@@ -1,0 +1,22 @@
+ &cntrl
+   imin = 0, irest = 1, ntx = 5,
+   nstlim = 30000000, dt = 0.002, nscm = 5000,barostat = 1,
+   ntc = 2, ntf = 2, tol = 0.000001,
+   iwrap = 1, ntb = 2, cut = 13.0,
+   ntt = 3, temp0 = 300.0, tempi = 300.0, gamma_ln = 1.0,
+   ntp=1, pres0=1.0, taup=1.0,
+   ntpr = 50000, ntwx = 50000, ntwr = 100000,
+   ntr=0, tol=0.0000001,
+   ntxo = 1, ioutfm = 1, ig = -1, ntwprt = 0,
+   igamd = 18, iE = 1, iEP = 2, iED = 1, irest_gamd = 0,
+   ntcmd = 7000000, nteb = 23000000, ntave = 200000,
+   ntcmdprep = 200000, ntebprep = 200000,
+   sigma0P = 6.0, sigma0D = 6.0,
+   icfe = 1, ifsc = 1,gti_cpu_output = 0,gti_add_sc = 1,
+   timask1 = ':69-77', scmask1 = ':69-77',
+   timask2 = '', scmask2 = '',
+ /
+&ewald
+  netfrc=0,
+  skin_permit=0.75,
+&end
